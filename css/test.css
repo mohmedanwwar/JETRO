@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+  .header .logo{
+    width: 24%;
+    padding: 30px 20px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .header .logo a {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    color: orangered;
+  }
+  
+  .header .logo a .s-sigma{
+    color: orangered;
+  }
+  
+  .header .logo a .s-star{
+    color: rgb(204, 171, 3);
+  }
+  .header .logo #darkMode{
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 26px;
+  }
+  
+  .header .logo #lightMode{
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    display: none;
+    font-size: 26px;
+  }
+  .header .logo #lightMode i{
+    color: rgb(255, 255, 2);
+  }
+  
+  .header .nav{
+    width: 65%;
+    padding: 30px 20px;
+    font-weight: bold;
+  }
+  
+  .header .nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+  .header .nav ul li{
+    margin-left: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+    font-weight: bold;
+  }
+  
+  .header .nav ul li a{
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    color: rgb(110, 106, 106);
+    cursor: pointer;
+    
+  }
+  
+  .header .nav ul li a:hover {
+    color:dodgerblue !important;
+  }
+  .header .nav ul li .nav-btn {
+    font-size: 16px;
+    color: rgb(94, 94, 94);
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 100px;
+    font-weight: 300;
+    transition: 0.5s;
+  }
+  
+  .header .nav ul li .nav-btn:hover {
+    background-color: dodgerblue !important;
+    color: white !important;
+  }
+  .img{
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    background-size: cover;
+
+  }
+  .clear{
+    clear:both
+  }
+  .ourPhoto{
+    width: 100%;
+    height: 700px;
+    background-image: url(./image/images.jpg);
+    background-size: cover;
+    
+  }
+  .count .main img{
+    width: 33%;
+    height: auto;
+    float: left; 
+    max-width: 235px;
+    
+  }
+  .char1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  .chiid{
+   width: 40%;    
+
+  }
+  .char1 .chiid p{
+    text-align: left;
+  }
+  .char1 .chiid h1{
+    text-align: center;
+    color: orangered;
+  }     
+  .char1 .chiid .i{
+    width: 500px;
+  }
+  .char1 .chiid button{
+    background-color: orange;
+    text-align: center;
+  }

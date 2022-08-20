@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  
+  .header .logo{
+    width: 10%;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+  .header .logo a{
+    text-decoration: none;
+    font-size: 32px;
+    color: orangered;
+  }
+  .header .logo a span{
+    color: rgba(255, 68, 0, 0.315);
+  }
+  
+  .header .nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+  
+  .header .nav ul li{
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 10px;
+    font-weight: bold;
+  }
+  .header .nav ul .icon{
+    display: none;
+  }
+  .header .nav ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    color: grey;
+    text-transform: uppercase;
+    
+    padding: 10px;
+  }
+  .header .nav .active a{
+color: orangered !important;
+  }
+  
+  .header .nav ul li a:hover {
+    color: orangered;
+  }
+  /*==========نهاية شريط التنقل========================*/
+  /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++=*/
+  /*====================بداية المحتوي=======*/
+  .conta{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .conta .main{
+    width: 100%;
+    height: 90vh;
+    background-image: url(../image/images.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+  }
+  
+  .conta .main-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .conta .main-images img{
+    width: calc(93% / 6);
+    margin-bottom: 20px;
+  }
+  .conta .char1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .conta .char1 .chiid{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .conta .char1 .chiid>div{
+    display: flex;
+    flex-wrap: nowrap;
+    color: orangered;
+  }
+  .conta .char1 .chiid>div>i{
+    margin: 20px 10px 0px 0px;
+    font-size: 32px;
+    font-weight: bold;
+    align-content: space-around;
+  }
+  .conta .char1 .chiid>div>h4{
+    margin: 5px;
+    font-size: 28px;
+    font-weight: bold;
+    align-content: space-around;
+  }
+  .conta .char1 .chiid p{
+    margin: 15px 0px;
+  }
+  .conta .char1 .chiid a{
+    margin: 5px;
+    text-decoration: none;
+    background-color: orangered;
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+  }
+  .conta .parent{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .conta .parent>div{
+    display: flex;
+    color: gray;
+  }
+  .conta .parent>div h3{
+    width: 15%;
+  }
+  .conta .parent>div .line{
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.678);
+  }
+  .conta .child{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .conta .child div{
+    width: 24%;
+    border: 1px solid gray;
+    font-weight: bold;
+  }
+  .conta .child div:hover{
+    cursor: pointer;
+  }
+  
+  .conta .child div img{
+    width: 100%;
+  }
+  .conta .child div h4{
+    padding: 5px;
+    margin-left: 5px;
+    color: grey;
+  }
+  
+  .conta .child div p{
+    padding: 5px;
+    margin-left: 5px;
+    color: orangered;
+  }
+  /*نهاية المحتوي============*/
+  /*=====================================================================================*/
+  /*- بداية الخاتمة-*/
+  .footer{
+    width: 100%;
+    background-color: rgba(255, 68, 0, 0.315);
+  }
+  .footer .footer-content{
+    width: 95%;
+    margin: auto;
+    background-color: orangered;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border-right: 10px solid white;
+    border-left: 10px solid white;
+  }
+  .footer .footer-content div{
+    width: calc(95% / 3);
+  }
+  .footer .footer-content div h3,
+  .footer .footer-content div p{
+    padding: 5px;
+    margin: 10px;
+  }
+  
+  .footer .footer-content div p i{
+    font-size: 24px;
+  }
+  .footer .footer-content div p i:hover{
+    color: blue;
+  }
+    /*- نهاية الخاتمة-*/
+    /*=========================================================================///*/
+  /* ========== بداية الميديا =============== */
+  @media(max-width: 1500px) {
+    .conta .main{
+      height: 40vh;
+    }
+    .conta .parent>div h3{
+      width: 20%;
+    }
+  }
+  @media(max-width:1200px) {
+    .conta .parent>div h3{
+      width: 25%;
+    }
+  }
+  @media(max-width:950px) {
+    .conta .main-images img{
+      width: 30%;
+    }
+    .conta .content{
+      justify-content: space-around;
+    }
+    .conta .content .chiid{
+      width: 45%;
+      margin-bottom: 10px;
+    }
+    .conta .parent>div h3{
+      width: 30%;
+    }
+  }
+  
+  @media(max-width: 750px) {
+    .header .nav ul li{
+      display: none;
+    }
+    .header .nav ul .bar-icon{
+      display: inline-block;
+    }
+    .conta .main-images{
+      justify-content: space-around;
+    }
+    .conta .main-images img{
+      width: 45%;
+    }
+    .conta .content .chiid{
+      width: 90%;
+    }
+    .conta .parent>div h3{
+      width: 40%;
+    }
+    .conta .child{
+      flex-wrap: wrap;
+    }
+    .conta .child div{
+      width: 48%;
+      margin-bottom: 10px;
+    }
+    .footer .footer-content{
+      flex-wrap: wrap;
+    }
+    .footer .footer-content div{
+      width: 95%;
+    }
+  }
+  @media(max-width: 600px){
+    .conta .parent>div h3{
+      width: 60%;
+    }
+  }
+  @media(max-width: 450px) {
+    .conta .child div{
+      width: 97%;
+      margin: auto;
+      margin-bottom: 10px;
+    }
+    .conta .parent>div h3{
+      width: 90%;
+    }
+  }
